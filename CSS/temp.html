@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css"></link>
+</head>
+<body>
+    
+
+    <header></header>
+    <main>
+
+        <section>
+            <div class="w-75 bg-info m-auto my-2 rounded-2 p-2">
+                <h1 class="text-center">CRUD System</h1>
+
+                <div>
+                    <div class="form-floating mb-3  ">
+                        <input type="text" name="productName" class="form-control" id="productName" placeholder="">
+                        <label for="productName">product Name</label>
+                      </div>
+                      <div class="form-floating mb-3  m-auto">
+                        <input type="number" name="productPrice" class="form-control" id="productPrice" placeholder="">
+                        <label for="productPrice">product Price</label>
+                      </div>
+
+                      <div class="form-floating mb-3  m-auto">
+                        <input type="text" list="category" name="CategoryType" class="form-control" id="CategoryType" placeholder="">
+
+                        <datalist id="category" >
+                            <option value="mobiles">
+                            <option value="laptops">
+                            <option value="taplats">
+                          </datalist>
+                        <label for="productPrice">product category</label>
+                      </div>
+
+
+                      <div class="form-floating mb-3 m-auto">
+                        <textarea style="height: 90px;" type="text" class="form-control" name="ProductDetails" id="ProductDetails" placeholder=""></textarea>
+                        <label for="productName">product Name</label>
+                      </div>
+                      <div class="form-floating mb-3  m-auto">
+                        <input type="file" name="Image" class="form-control" id="ProductImage" placeholder="">
+                        <label for="ProductImage">Product Image</label>
+                      </div>
+
+                      <button type="submit" onclick="addProduct()" class="btn btn-danger"> Add Product</button>
+                      <button type="submit" class="btn btn-warning d-none"> update Product</button>
+
+                </div>
+
+
+                
+            </div>
+        </section>
+
+        <section>
+
+          <div>
+
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Product Name</th>
+                  <th scope="col">product Price</th>
+                  <th scope="col">Product cateory</th>
+                  <th scope="col">Product details</th>
+                  <th scope="col">Actions</th>
+
+                </tr>
+              </thead>
+              <tbody id="data">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                  <td>
+                    <button  class="btn btn-info"> update</button>
+                    <button  class="btn btn-light"> delete</button>
+
+
+                  </td>
+
+                </tr>
+               
+              </tbody>
+            </table>
+            
+          
+          </div>
+
+        </section>
+
+
+    </main>
+    <footer></footer>
+    <script src="JS/bootstrap.bundle.min.js"></script> 
+    <script src="JS/Index.js"></script>
+</body>
+</html>
